@@ -2,7 +2,7 @@ import { useState } from "react";
 
 function App() {
   return (
-    <div className="bg-[#050816] text-white min-h-screen">
+    <div className="bg-[white] text-black">
       <nav className="flex justify-between items-center px-8 py-6">
         <h1 className="text-xl font-bold tracking-wide">⚡Sabi Lighter</h1>
       </nav>

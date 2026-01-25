@@ -14,14 +14,14 @@ function App() {
             <span className="text-blue-500">Smart Power In Your Hand</span>
           </h1>
 
-          <p className="mt-4 text-gray-300">
+          <p className="mt-4 text-white">
             Windproof Arc Technology • USB Rechargeable • Flexible Neck Design
           </p>
         </div>
 
         <div className="flex-1 flex justify-center">
           <img
-            src="public/lighter.png"
+            src="/lighter.png"
             alt="Sabi Lighter"
             className="h-[400px] drop-shadow-[0_0_20px_rgba(0,140,255,0.5)]"
           />
@@ -45,7 +45,7 @@ function App() {
               className="bg-[#0c1022] border border-blue-500/20 p-6 rounded-xl text-center hover:scale-105 transition"
             >
               <h3 className="font-semibold text-lg">{item}</h3>
-              <p className="text-gray-400 mt-2 text-sm">
+              <p className="text-white mt-2 text-sm">
                 Premium performance for everyday use.
               </p>
             </div>
@@ -61,7 +61,7 @@ function App() {
             <div className="text-blue-500 text-2xl font-bold mb-2">1</div>
             <h3 className="font-semibold">Plug Into USB</h3>
             <img src="/demo1.png" style={{ width: "150px", height: "150px" }} />
-            <p className="text-gray-400 text-sm mt-2">
+            <p className="text-white text-sm mt-2">
               Recharge easily with any USB cable.
             </p>
           </div>
@@ -70,7 +70,7 @@ function App() {
             <div className="text-blue-500 text-2xl font-bold mb-2">2</div>
             <h3 className="font-semibold">Press Power Button</h3>
             <img src="/demo2.png" style={{ width: "150px", height: "150px" }} />
-            <p className="text-gray-400 text-sm mt-2">
+            <p className="text-white text-sm mt-2">
               Activate the electric arc instantly.
             </p>
           </div>
@@ -79,7 +79,7 @@ function App() {
             <div className="text-blue-500 text-2xl font-bold mb-2">3</div>
             <h3 className="font-semibold">Light Instantly</h3>
             <img src="/demo3.png" style={{ width: "150px", height: "150px" }} />
-            <p className="text-gray-400 text-sm mt-2">
+            <p className="text-white text-sm mt-2">
               Enjoy fast and safe ignition.
             </p>
           </div>
@@ -124,25 +124,25 @@ function App() {
         </div>
       </section>
 
-      <footer className="text-center py-8 text-gray-400 text-sm">
+      <footer className="text-center py-8 text-white text-sm">
         <div className="flex justify-center gap-50 mb-4">
           <a href="https://www.facebook.com/share/1DUavAFSQf/?mibextid=wwXIfr">
             <img
-              src="public/facebook.png"
+              src="/facebook.png"
               alt="facebook-icon"
               style={{ width: "50px", height: "50px" }}
             />
           </a>
           <a href="https://www.tiktok.com/@sabi.lighter?_r=1&_t=ZS-93L28gNbyrw">
             <img
-              src="public/tiktok.png"
+              src="/tiktok.png"
               alt="tiktok-icon"
               style={{ width: "50px", height: "50px" }}
             />
           </a>
           <a href="https://wa.me/message/SULENUJBBE57P1">
             <img
-              src="public/whatsapp.png"
+              src="/whatsapp.png"
               alt="whatsapp-icon"
               style={{ width: "50px", height: "50px" }}
             />

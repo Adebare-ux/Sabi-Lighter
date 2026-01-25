@@ -14,7 +14,7 @@ function App() {
             <span className="text-blue-500">Smart Power In Your Hand</span>
           </h1>
 
-          <p className="mt-4 text-white">
+          <p className="mt-4 text-black">
             Windproof Arc Technology • USB Rechargeable • Flexible Neck Design
           </p>
         </div>
@@ -42,7 +42,7 @@ function App() {
           ].map((item) => (
             <div
               key={item}
-              className="bg-[#0c1022] border border-blue-500/20 p-6 rounded-xl text-center hover:scale-105 transition"
+              className="bg-black border border-blue-500/20 p-6 rounded-xl text-center hover:scale-105 transition"
             >
               <h3 className="font-semibold text-lg">{item}</h3>
               <p className="text-white mt-2 text-sm">
@@ -53,13 +53,15 @@ function App() {
         </div>
       </section>
 
-      <section className="px-8 py-20 bg-[#070b1f]">
-        <h2 className="text-center text-3xl font-bold mb-12">How It Works</h2>
+      <section className="px-8 py-20 bg-black">
+        <h2 className="text-center text-3xl font-bold mb-12 text-white">
+          How It Works
+        </h2>
 
         <div className="flex flex-col md:flex-row gap-20 text-center justify-center">
           <div className="px-4">
             <div className="text-blue-500 text-2xl font-bold mb-2">1</div>
-            <h3 className="font-semibold">Plug Into USB</h3>
+            <h3 className="font-semibold text-white">Plug Into USB</h3>
             <img src="/demo1.png" style={{ width: "150px", height: "150px" }} />
             <p className="text-white text-sm mt-2">
               Recharge easily with any USB cable.
@@ -68,7 +70,7 @@ function App() {
 
           <div className="px-4">
             <div className="text-blue-500 text-2xl font-bold mb-2">2</div>
-            <h3 className="font-semibold">Press Power Button</h3>
+            <h3 className="font-semibold text-white">Press Power Button</h3>
             <img src="/demo2.png" style={{ width: "150px", height: "150px" }} />
             <p className="text-white text-sm mt-2">
               Activate the electric arc instantly.
@@ -77,7 +79,7 @@ function App() {
 
           <div className="px-4">
             <div className="text-blue-500 text-2xl font-bold mb-2">3</div>
-            <h3 className="font-semibold">Light Instantly</h3>
+            <h3 className="font-semibold text-white">Light Instantly</h3>
             <img src="/demo3.png" style={{ width: "150px", height: "150px" }} />
             <p className="text-white text-sm mt-2">
               Enjoy fast and safe ignition.
@@ -92,18 +94,18 @@ function App() {
         </h2>
 
         <div className="flex flex-row gap-6 justify-center">
-          <div className="bg-[#0c1022] rounded-xl p-3">
+          <div className="bg-black rounded-xl p-3">
             <img
               src="/candle.png"
               style={{ width: "120px", height: "120px" }}
             />
           </div>
 
-          <div className="bg-[#0c1022] rounded-xl p-3">
+          <div className="bg-black rounded-xl p-3">
             <img src="/cook.png" style={{ width: "120px", height: "120px" }} />
           </div>
 
-          <div className="bg-[#0c1022] rounded-xl p-3">
+          <div className="bg-black rounded-xl p-3">
             <img
               src="/cooking.png"
               style={{ width: "120px", height: "120px" }}
@@ -124,7 +126,7 @@ function App() {
         </button>
       </section>
 
-      <footer className="text-center py-8 text-white text-sm">
+      <footer className="text-center py-8 text-white text-sm bg-black">
         <div className="flex justify-center gap-50 mb-4">
           <a href="https://www.facebook.com/share/1DUavAFSQf/?mibextid=wwXIfr">
             <img

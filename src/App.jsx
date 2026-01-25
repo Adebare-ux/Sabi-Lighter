@@ -113,15 +113,15 @@ function App() {
       </section>
 
       <section className="px-8 py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-center">
-        <h2 className="text-3xl font-bold">
+        <h2 className="text-3xl font-bold text-white">
           Ready To Upgrade Your Fire Experience?
         </h2>
 
-        <p className="mt-4">Smart • Safe • Powerful</p>
+        <p className="mt-4 text-white">Smart • Safe • Powerful</p>
 
-        <div className="mt-6 h-1 w-24 bg-white mx-auto rounded">
+        <button className="mt-6 bg-black px-10 py-3 rounded-lg text-lg hover:bg-gray-900 transition text-white">
           Order Sabi Lighter Now
-        </div>
+        </button>
       </section>
 
       <footer className="text-center py-8 text-white text-sm">

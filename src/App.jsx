@@ -37,31 +37,7 @@ function App() {
   return (
     <div className="bg-[white] text-black">
       <nav className="flex justify-between items-center px-8 py-6">
-        <h1 className="text-xl font-bold tracking-wide">⚡Sabi Lighter</h1>
-
-        <div className="flex justify-center gap-50 mb-4">
-          <a href="https://www.facebook.com/share/1DUavAFSQf/?mibextid=wwXIfr">
-            <img
-              src="/facebook.png"
-              alt="facebook-icon"
-              style={{ width: "50px", height: "50px" }}
-            />
-          </a>
-          <a href="https://www.tiktok.com/@sabi.lighter?_r=1&_t=ZS-93L28gNbyrw">
-            <img
-              src="/tiktok.png"
-              alt="tiktok-icon"
-              style={{ width: "50px", height: "50px" }}
-            />
-          </a>
-          <a href="https://wa.me/message/SULENUJBBE57P1">
-            <img
-              src="/whatsapp.png"
-              alt="whatsapp-icon"
-              style={{ width: "50px", height: "50px" }}
-            />
-          </a>
-        </div>
+        <img src="/sabi.png" alt="Sabi Lighter Logo" className="h-2" />
       </nav>
 
       <section className="flex flex-col md:flex-row items-center px-8 py-20 gap-10">
@@ -70,21 +46,41 @@ function App() {
             <span className="text-blue-500">Smart Power In Your Hand</span>
           </h1>
 
-          <p className="mt-4 text-black">
-            Windproof Arc Technology • USB Rechargeable • Flexible Neck Design
-          </p>
-        </div>
-
-        <div className="flex-1 flex justify-center">
-          <img
-            src="/lighter.png"
-            alt="Sabi Lighter"
-            className="h-[200px] drop-shadow-[0_0_20px_rgba(0,140,255,0.5)]"
-          />
+          <div className="flex justify-center gap-50 mb-10">
+            <a href="https://www.facebook.com/share/1DUavAFSQf/?mibextid=wwXIfr">
+              <img
+                src="/facebook.png"
+                alt="facebook-icon"
+                style={{ width: "50px", height: "50px" }}
+              />
+            </a>
+            <a href="https://www.tiktok.com/@sabi.lighter?_r=1&_t=ZS-93L28gNbyrw">
+              <img
+                src="/tiktok.png"
+                alt="tiktok-icon"
+                style={{ width: "50px", height: "50px" }}
+              />
+            </a>
+            <a href="https://wa.me/message/SULENUJBBE57P1">
+              <img
+                src="/whatsapp.png"
+                alt="whatsapp-icon"
+                style={{ width: "50px", height: "50px" }}
+              />
+            </a>
+          </div>
         </div>
       </section>
 
       <Reveal>
+        <div className="flex-1 flex justify-center">
+          <img
+            src="/lighter.png"
+            alt="Sabi Lighter"
+            className="h-[200px] drop-shadow-[0_0_20px_rgba(0,140,255,0.5)] mt-10"
+          />
+        </div>
+
         <section className="px-8 py-20">
           <h2 className="text-center text-3xl font-bold mb-12">
             Why Choose Sabi Lighter?
@@ -119,7 +115,7 @@ function App() {
 
           <div className="flex flex-row gap-8 text-center justify-center items-center flex-wrap">
             <div className="flex-1 min-w-fit">
-              <div className="text-blue-500 text-2xl font-bold mb-2">1</div>
+              <div className="text-blue-500 text-2xl font-bold mb-2"></div>
               <h3 className="font-semibold text-white">Plug Into USB</h3>
               <img
                 src="/demo1.png"
@@ -133,7 +129,7 @@ function App() {
             <div className="text-blue-500 text-3xl">→</div>
 
             <div className="flex-1 min-w-fit">
-              <div className="text-blue-500 text-2xl font-bold mb-2">2</div>
+              <div className="text-blue-500 text-2xl font-bold mb-2"></div>
               <h3 className="font-semibold text-white">Press Power Button</h3>
               <img
                 src="/demo2.png"
@@ -147,7 +143,7 @@ function App() {
             <div className="text-blue-500 text-3xl">→</div>
 
             <div className="flex-1 min-w-fit">
-              <div className="text-blue-500 text-2xl font-bold mb-2">3</div>
+              <div className="text-blue-500 text-2xl font-bold mb-2"></div>
               <h3 className="font-semibold text-white">Light Instantly</h3>
               <img
                 src="/demo3.png"

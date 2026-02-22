@@ -36,8 +36,8 @@ function Reveal({ children }) {
 function App() {
   return (
     <div className="bg-[white] text-black">
-      <nav className="flex justify-between items-center px-8 py-6">
-        <img src="/sabi.png" alt="Sabi Lighter Logo" className="h-2" />
+      <nav className="flex justify-between items-center px-4 md:px-8 py-4">
+        <img src="/sabi.png" alt="Sabi Lighter Logo" className="h-0.2 w-0.2" />
       </nav>
 
       <section className="flex flex-col md:flex-row items-center px-8 py-20 gap-10">

@@ -36,7 +36,7 @@ function Reveal({ children, delay = 0 }) {
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
+
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 30);
     window.addEventListener("scroll", fn);
@@ -52,105 +52,63 @@ export default function App() {
         overflowX: "hidden",
       }}
     >
+      {/* NAV */}
       <nav
-        className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? "bg-[#080c12]/95 border-b border-blue-500/20" : "bg-[#080c12]/70"} backdrop-blur-md`}
+        style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          right: 0,
+          zIndex: 100,
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          padding: "16px 40px",
+          background: scrolled ? "rgba(8,12,18,0.92)" : "transparent",
+          backdropFilter: scrolled ? "blur(12px)" : "none",
+          borderBottom: scrolled ? "1px solid rgba(0,140,255,0.15)" : "none",
+          transition: "all 0.4s ease",
+        }}
       >
-        {/* Top Bar */}
-        <div className="flex justify-between items-center px-6 py-4">
-          <span className="text-xl font-extrabold tracking-wide text-white">
-            SABI <span className="text-blue-500">LIGHTER</span>
-          </span>
-
-          {/* Desktop Links */}
-          <div className="hidden md:flex items-center gap-6">
-            {[
-              {
-                href: "https://www.facebook.com/share/1DUavAFSQf/?mibextid=wwXIfr",
-                label: "Facebook",
-              },
-              { href: "https://www.tiktok.com/@sabi.lighter", label: "TikTok" },
-              {
-                href: "https://wa.me/message/SULENUJBBE57P1",
-                label: "WhatsApp",
-              },
-            ].map(({ href, label }) => (
-              <a
-                key={label}
-                href={href}
-                target="_blank"
-                rel="noreferrer"
-                className="text-sm text-blue-200 hover:text-blue-400 font-medium transition-colors"
-              >
-                {label}
-              </a>
-            ))}
-            <a
-              href="https://wa.me/message/SULENUJBBE57P1"
-              target="_blank"
-              rel="noreferrer"
-              className="bg-gradient-to-r from-blue-700 to-blue-500 text-white px-5 py-2 rounded-lg text-sm font-bold hover:opacity-90 transition"
-            >
-              Order Now
-            </a>
-          </div>
-
-          {/* Hamburger - Mobile Only */}
-          <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden flex flex-col gap-1.5 p-2 border border-blue-500/30 rounded-lg"
-          >
-            <span
-              className={`block w-5 h-0.5 bg-blue-200 transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""}`}
-            />
-            <span
-              className={`block w-5 h-0.5 bg-blue-200 transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`}
-            />
-            <span
-              className={`block w-5 h-0.5 bg-blue-200 transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}
-            />
-          </button>
-        </div>
-
-        {/* Mobile Dropdown */}
-        <div
-          className={`md:hidden transition-all duration-300 overflow-hidden ${menuOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0"}`}
+        <span
+          style={{
+            fontSize: "20px",
+            fontWeight: 800,
+            letterSpacing: "0.04em",
+            color: "#fff",
+          }}
         >
-          <div className="flex flex-col gap-3 px-6 pb-5 border-t border-blue-500/10 pt-4">
-            {[
-              {
-                href: "https://www.facebook.com/share/1DUavAFSQf/?mibextid=wwXIfr",
-                label: "Facebook",
-              },
-              { href: "https://www.tiktok.com/@sabi.lighter", label: "TikTok" },
-              {
-                href: "https://wa.me/message/SULENUJBBE57P1",
-                label: "WhatsApp",
-              },
-            ].map(({ href, label }) => (
-              <a
-                key={label}
-                href={href}
-                target="_blank"
-                rel="noreferrer"
-                onClick={() => setMenuOpen(false)}
-                className="text-blue-200 font-medium text-sm hover:text-blue-400 transition-colors"
-              >
-                {label}
-              </a>
-            ))}
+          SABI <span style={{ color: "#0084ff" }}>LIGHTER</span>
+        </span>
+        <div style={{ display: "flex", gap: "24px", alignItems: "center" }}>
+          {[
+            {
+              href: "https://www.facebook.com/share/1DUavAFSQf/?mibextid=wwXIfr",
+              label: "Facebook",
+            },
+            {
+              href: "https://www.tiktok.com/@sabi.lighter?_r=1&_t=ZS-93L28gNbyrw",
+              label: "TikTok",
+            },
+            { href: "https://wa.me/message/SULENUJBBE57P1", label: "WhatsApp" },
+          ].map(({ href, label }) => (
             <a
-              href="https://wa.me/message/SULENUJBBE57P1"
+              key={label}
+              href={href}
               target="_blank"
               rel="noreferrer"
-              onClick={() => setMenuOpen(false)}
-              className="bg-gradient-to-r from-blue-700 to-blue-500 text-white text-center py-3 rounded-lg text-sm font-bold mt-1"
+              style={{
+                fontSize: "13px",
+                color: "#aac4ff",
+                textDecoration: "none",
+                fontWeight: 500,
+              }}
             >
-              Order Now
+              {label}
             </a>
-          </div>
+          ))}
         </div>
       </nav>
-
       {/* HERO */}
       <section
         style={{
